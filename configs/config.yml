@@ -1,0 +1,37 @@
+Project_Name: 'HDR'
+Data_name: 'Kalantari'
+Model_Name: 'MHDR'
+Grad_accumulation_num: 1
+
+
+Params:
+  in_channels: 64
+  d_model: 64
+  out_channels: 64
+  crop_size: 128
+  num_layers : [6,6,6]
+  window_size : 16
+
+Train:
+  batch_size: 2
+  dataset_root: '/703_files/gzy/SIG/Training'
+
+Val:
+  val_per_epochs: 50
+  batch_size: 1
+  dataset_root: '/703_files/gzy/SIG/Test'
+
+Optim:
+  lr_initial: 2e-4
+  lr_min: 1e-6
+
+Scheduler:
+  total_epochs: 5500
+  warmup_epochs: 5
+  warmup_lr_initial: 1e-6
+
+Resume:
+  is_resume: False
+  resume_best: True
+  start_epoch: -1
+  dir_checkpoints: './checkpoints'
