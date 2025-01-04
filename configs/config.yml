@@ -14,12 +14,12 @@ Params:
 
 Train:
   batch_size: 2
-  dataset_root: '/703_files/gzy/SIG/Training'
+  dataset_root: '/path/data/Training'
 
 Val:
   val_per_epochs: 50
   batch_size: 1
-  dataset_root: '/703_files/gzy/SIG/Test'
+  dataset_root: '/path/data/Test'
 
 Optim:
   lr_initial: 2e-4
