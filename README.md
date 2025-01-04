@@ -31,7 +31,9 @@ data
 ```
 
 ### Train
-We utilize 1 RTX3090 GPU for training.
+```bash
+python train.py
+```
 
 
 
